@@ -6,6 +6,8 @@
     "@chakra-ui/react": "^1.7.3",
     "@emotion/react": "^11.0.0",
     "@emotion/styled": "^11.0.0",
+    "@fontsource/lexend-deca": "^4.5.2",
+    "@fontsource/nunito-sans": "^4.5.1",
     "framer-motion": "^4.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",

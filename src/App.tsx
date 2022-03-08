@@ -1,15 +1,23 @@
 import React from 'react';
 
-import { ChakraProvider, Container, theme } from '@chakra-ui/react';
+import '@fontsource/lexend-deca';
+import '@fontsource/nunito-sans';
 
-import { ColorModeSwitcher } from './ColorModeSwitcher';
+import { ChakraProvider } from '@chakra-ui/react';
+
+import { Background } from './components/Background';
+import { AppProvider } from './hooks';
+import { Home } from './pages/Home';
+import { theme } from './styles/theme';
 
 export const App: React.FC = () => {
   return (
     <ChakraProvider theme={theme}>
-      <Container w="100%" maxW="980px" h="100vh">
-        <ColorModeSwitcher />
-      </Container>
+      <AppProvider>
+        <Background>
+          <Home />
+        </Background>
+      </AppProvider>
     </ChakraProvider>
   );
 };
